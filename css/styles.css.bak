@@ -1,0 +1,300 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #007BFF;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}logo {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    display: inline-block; /* ensure the logo is displayed as an inline block */
+    vertical-align: middle; /* center the logo vertically */
+}
+
+.hero {
+  position: relative;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.slider {
+  position: relative;
+  width: 80%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slider-nav {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.prev-btn, .next-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.dot {
+  background-color: white;
+  border: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #007BFF;
+}
+}
+
+/* Featured Trips Section */
+.trips {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.trips h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.trip-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #007BFF;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.card .cta-btn {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.card .cta-btn:hover {
+    background: #0056b3;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.testimonial {
+    margin: 30px auto;
+    width: 60%;
+    font-style: italic;
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.testimonial cite {
+    font-size: 1em;
+    color: #007BFF;
+}
+
+/* Booking Section */
+.book-now {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.book-now h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.book-now p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.book-now .cta-btn {
+    background: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.book-now .cta-btn:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li {
+    margin: 0;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer ul li a:hover {
+    color: #FFD700;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .trip-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .testimonial {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .cta-btn {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+

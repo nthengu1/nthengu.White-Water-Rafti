@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="White Water Rafting - Unforgettable rafting adventures for all levels.">
+    <title>White Water Rafting</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Add some external fonts or icons if needed -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#trips">Trips</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+	<!-- Hero Section -->
+<section id="home">
+  <div class="hero">
+    <div class="slider">
+      <div class="slide active">
+        <img src="images/slide1.jpg" alt="Slide 1">
+        <h1>Welcome to White Water Rafting!</h1>
+        <p>Get ready for an unforgettable adventure! Whether you're a beginner or an experienced rafter, we have a trip for you.</p>
+      </div>
+      <div class="slide">
+        <img src="images/slide2.jpg" alt="Slide 2">
+        <h1>Experience the Thrill of White Water Rafting!</h1>
+        <p>Our expert guides will navigate you through the river's most thrilling sections, ensuring an adrenaline-packed adventure that's both safe and enjoyable.</p>
+      </div>
+      <div class="slide">
+        <img src="images/slide3.jpg" alt="Slide 3">
+        <h1>Join Us for an Unforgettable Adventure!</h1>
+        <p>Whether you're a seasoned rafter or a first-time adventurer, we'll provide you with an unforgettable experience on the river.</p>
+      </div>
+    </div>
+    <div class="slider-nav">
+      <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+      <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="slider-dots">
+      <button class="dot active"></button>
+      <button class="dot"></button>
+      <button class="dot"></button>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Featured Trips Section -->
+    <section id="trips" class="trips">
+        <h2>Featured Trips</h2>
+        <div class="trip-cards">
+            <div class="card">
+                <h3>Easy Trip</h3>
+                <p>Perfect for families or those new to rafting. Enjoy calm waters and stunning views.</p>
+                <a href="#book-now" class="cta-btn">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Intermediate Trip</h3>
+                <p>For the more adventurous souls. Test your skills on moderate rapids.</p>
+                <a href="#book-now" class="cta-btn">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Advanced Trip</h3>
+                <p>For thrill-seekers! Navigate through intense rapids and enjoy the challenge.</p>
+                <a href="#book-now" class="cta-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <p>"An incredible experience! The guides were friendly, knowledgeable, and made the trip unforgettable!"</p>
+            <cite>- Daniel.</cite>
+        </div>
+        <div class="testimonial">
+            <p>"This was the best family outing we’ve had! We felt safe and had so much fun together."</p>
+            <cite>- Nthengu.</cite>
+        </div>
+    </section>
+
+    <!-- Book Now Section -->
+    <section id="book-now" class="book-now">
+        <h2>Book Your Trip</h2>
+        <p>Ready for an adventure? Book your trip now and get ready to experience the thrill of white water rafting!</p>
+        <a href="https://your-booking-platform-link.com" class="cta-btn">Book Now</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 White Water Rafting. All rights reserved.</p>
+        <ul class="social-media">
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
